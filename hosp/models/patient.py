@@ -1,5 +1,9 @@
-from odoo import api, fields, models
-class HospitalPatient(models.model):
-_name = 'hospital.patient'
+from odoo import models, fields
 
-    
+class Patient(models.Model):
+    _name = 'hospital.patient'
+    _description = 'Hospital Patient'
+
+    name = fields.Char(string='Patient Name', required=True)
+    age = fields.Integer(string='Age')
+    gender = fields.Selection([('male', 'Male'), ('female', 'Female')], string='Gender')
