@@ -13,7 +13,9 @@
     'website': 'https://clickpoa.odoo.com',
     'license': 'LGPL-3',
     'depends': [],
-    'data': [],
+    'data': [
+        'views/menu.xml',
+    ],
     'assets': {},
     'installable': True,
     'application': True,
