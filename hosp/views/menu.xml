@@ -5,10 +5,6 @@
     id="menu_hospital_root"
     name="Hospital"
     sequence="0"/>
-
-        
-
-    </data>
 </odoo>
 
 
