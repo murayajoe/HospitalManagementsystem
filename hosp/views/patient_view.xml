@@ -7,7 +7,7 @@
             <form>
                 <sheet>
                     <group>
-                        <field name="patient name"/>
+                        <field name="name"/>
                         <field name="age"/>
                     </group>
                     <group>
