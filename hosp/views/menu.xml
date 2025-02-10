@@ -9,6 +9,6 @@
         <menuitem
             id="menu_patient_master"
             name="Patient Details"
-            parent_id="menu_hospital_root"
+            parent="menu_hospital_root"
             sequence="1"/>   
 </odoo>
