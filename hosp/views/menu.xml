@@ -1,25 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-<data noupdate="1">
-
     <menuitem
     id="menu_hospital_root"
     name="Hospital"
     sequence="0"/>
+
     <menuitem
     id="menu_patient_master"
     name="Patient Details"
     Parent="menu_hospital_root"
     sequence="0"/>
+
     <menuitem
     id="menu_patient"
-    Parent="menu_patient_master"
-    name="Hospital"
-    sequence="0"/>
-
-</data>
-
-   
+    Parent="menu_patient_masteZ"
+    name="Hospital Patient"
+    sequence="0"/>  
     
 </odoo>
 <!--action is needed for the last menu for it to appear on main -->
