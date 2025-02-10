@@ -14,7 +14,8 @@
     'license': 'LGPL-3',
     'depends': [],
     'data': [
-        'views/menu.xml'
+        'views/menu.xml',
+        'views/actions.xml'
     ],
     'assets': {},
     'installable': True,
