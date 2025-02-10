@@ -13,11 +13,7 @@
                 <field name="insurance" string="Insurance"/>
                 <field name="insurance_number" />
                 <field name="insurance"/>
-                  <t t-if="record.insurance.raw_value == 'Yes'">
-                    <field name="insurance_number" required="1"/>
-                  </t>
-
-            </list>
+                </list>
         </field>
     </record>
 
@@ -33,8 +29,7 @@
                         <field name="age" string="Age"/>
                         <field name="gender" string="Gender"/>
                         <field name="insurance" string="Do you have insurance?"/>
-                        <field name="insurance_number" 
-                               attrs="{'invisible': [('insurance', '=', 'No')], 'required': [('insurance', '=', 'Yes')]}"/>
+                        <field name="insurance_number"/>
                     </group>
                 </sheet>   
             </form>
