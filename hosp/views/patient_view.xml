@@ -5,7 +5,9 @@
     <field name="model">hospital.patient</field>
     <field name="arch" type="xml"> 
             <form>
-            
+            <group>
+                <field name="name"/>
+            </group>
             </form>
         </field>
     </record>
