@@ -15,6 +15,7 @@
     'depends': [],
     'data': [
         'views/menu.xml', 
+        "views/patient_view.xml"
     ],
     'assets': {},
     'installable': True,
