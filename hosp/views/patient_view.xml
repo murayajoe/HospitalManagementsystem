@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
 
-     <!-- Tree View -->
+    <!-- Tree View -->
     <record id="view_hospital_patient_tree" model="ir.ui.view">
         <field name="name">hospital.patient.list</field>
         <field name="model">hospital.patient</field>
@@ -10,13 +10,8 @@
                 <field name="name" string="Patient Name"/>
                 <field name="age" string="Age"/>
                 <field name="gender" string="Gender"/>
-                <!-- <field name="next_of_kin_name" string="next_of_kin_name"/>
-                <field name="contact" string="contact"/>
-                <field name="next_of_kin_contact" string="next_of_kin_contact"/>
-                <field name="insurance" string= "insurance"/>
-                <field name="identification_number" string="identification_number"/>
-                <field name="weight" string="weight" /> -->
-                <!-- <field name="insurance_number" attrs"{'invisible':[('insurance','=','No')], 'required': [('insurance''=' 'Yes')]}"/> -->
+                <field name="insurance" string="Insurance"/>
+                <field name="insurance_number" attrs="{'invisible': [('insurance', '=', 'No')]}"/>
             </list>
         </field>
     </record>
@@ -31,16 +26,10 @@
                     <group>
                         <field name="name" string="Patient Name"/>
                         <field name="age" string="Age"/>
-                        <!-- <field name="next_of_kin_name"/>
-                         <field name="contact"/>
-                         <field name="next_of_kin_contact"/>
-                         <field name="insurance"/>
-                         <field name="identification_number"/>
-                         <field name="weight"/>
-                         <field name="insurance_number" attrs"{'invisible':[('insurance','=','No')], 'required': [('insurance''=' 'Yes')]}"/> -->
-                    </group>
-                    <group>
                         <field name="gender" string="Gender"/>
+                        <field name="insurance" string="Do you have insurance?"/>
+                        <field name="insurance_number" 
+                               attrs="{'invisible': [('insurance', '=', 'No')], 'required': [('insurance', '=', 'Yes')]}"/>
                     </group>
                 </sheet>   
             </form>
