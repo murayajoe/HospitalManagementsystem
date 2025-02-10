@@ -10,6 +10,18 @@
                 <field name="name" string="Patient Name"/>
                 <field name="age" string="Age"/>
                 <field name="gender" string="Gender"/>
+                <field name="next_of_kin_name"/>
+                <field name="contact"/>
+                <field name="next_of_kin_contact"/>
+                <field name="insurance"/>
+                <field name="identification_number"/>
+                <field name="weight"/>
+                <field name="insurance_number" attrs"{'invisible':[('insurance','=','No')], 'required': [('insurance''=' 'Yes')]}"/>
+                
+
+
+
+
             </list>
         </field>
     </record>
@@ -24,6 +36,13 @@
                     <group>
                         <field name="name" string="Patient Name"/>
                         <field name="age" string="Age"/>
+                        <field name="next_of_kin_name"/>
+                         <field name="contact"/>
+                         <field name="next_of_kin_contact"/>
+                         <field name="insurance"/>
+                         <field name="identification_number"/>
+                         <field name="weight"/>
+                         <field name="insurance_number" attrs"{'invisible':[('insurance','=','No')], 'required': [('insurance''=' 'Yes')]}"/>
                     </group>
                     <group>
                         <field name="gender" string="Gender"/>
