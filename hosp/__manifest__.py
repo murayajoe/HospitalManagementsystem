@@ -15,7 +15,7 @@
     'depends': [],
     'data': [
         'views/menu.xml',
-        'views/actions.xml'
+        
     ],
     'assets': {},
     'installable': True,
