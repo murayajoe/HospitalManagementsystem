@@ -10,14 +10,13 @@
                 <field name="name" string="Patient Name"/>
                 <field name="age" string="Age"/>
                 <field name="gender" string="Gender"/>
-                <!-- <field name="next_of_kin_name"/>
-                <field name="contact"/>
-                <field name="next_of_kin_contact"/>
-                <field name="insurance"/>
-                <field name="identification_number"/>
-                <field name="weight"/>
-                <field name="insurance_number" attrs"{'invisible':[('insurance','=','No')], 'required': [('insurance''=' 'Yes')]}"/>
-                 -->
+                <field name="next_of_kin_name" string="next_of_kin_name"/>
+                <field name="contact" string="contact"/>
+                <field name="next_of_kin_contact" string="next_of_kin_contact"/>
+                <field name="insurance" string= "insurance"/>
+                <field name="identification_number" string="identification_number"/>
+                <field name="weight" string="weight" />
+                <!-- <field name="insurance_number" attrs"{'invisible':[('insurance','=','No')], 'required': [('insurance''=' 'Yes')]}"/> -->
             </list>
         </field>
     </record>
