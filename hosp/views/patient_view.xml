@@ -18,10 +18,6 @@
                 <field name="weight"/>
                 <field name="insurance_number" attrs"{'invisible':[('insurance','=','No')], 'required': [('insurance''=' 'Yes')]}"/>
                  -->
-
-
-
-
             </list>
         </field>
     </record>
