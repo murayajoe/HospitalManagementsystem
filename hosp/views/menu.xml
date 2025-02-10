@@ -13,7 +13,7 @@
 
     <menuitem
     id="menu_patient"
-    Parent="menu_patient_masteZ"
+    Parent="menu_patient_master"
     name="Hospital Patient"
     sequence="0"/>  
     
