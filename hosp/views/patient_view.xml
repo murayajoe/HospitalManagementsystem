@@ -11,7 +11,12 @@
                 <field name="age" string="Age"/>
                 <field name="gender" string="Gender"/>
                 <field name="insurance" string="Insurance"/>
-                <field name="insurance_number" attrs="{'invisible': [('insurance', '=', 'No')]}"/>
+                <field name="insurance_number" />
+                <field name="insurance"/>
+                  <t t-if="record.insurance.raw_value == 'Yes'">
+                    <field name="insurance_number" required="1"/>
+                  </t>
+
             </list>
         </field>
     </record>
