@@ -16,7 +16,6 @@
             id="menu_patient"
             name="Hospital Patient"
             parent_id="menu_patient_master"
-            sequence="2"
-            action="action_hospital_patient"/>
+            sequence="2"/>
     </data>
 </odoo>
