@@ -11,9 +11,5 @@
             name="Patient Details"
             sequence="1"/>
 
-        <menuitem
-            id="menu_patient"
-            name="Patient"
-            action="action_hospital_patient"
-            sequence="2"/>
+        
 </odoo>
