@@ -13,7 +13,7 @@
 
         <menuitem
             id="menu_patient"
-            name="Hospital Patient"
+            name="Patient"
             action="action_hospital_patient"
             sequence="2"/>
 </odoo>
