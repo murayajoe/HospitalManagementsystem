@@ -3,6 +3,7 @@
 
    <record id="view_hospital_patient_tree" model="ir.ui.view">
         <field name="name">hospital.patient.tree</field>
+        <field name="type">tree</field>
         <field name="model">hospital.patient</field>
         <field name="arch" type="xml"> 
             <tree>
