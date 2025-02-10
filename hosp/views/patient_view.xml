@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
 
-    <!-- Tree View
+     <!-- Tree View -->
     <record id="view_hospital_patient_tree" model="ir.ui.view">
-        <field name="name">hospital.patient.tree</field>
+        <field name="name">hospital.patient.list</field>
         <field name="model">hospital.patient</field>
         <field name="arch" type="xml"> 
-            <tree>
+            <list>
                 <field name="name" string="Patient Name"/>
                 <field name="age" string="Age"/>
                 <field name="gender" string="Gender"/>
-            </tree>
+            </list>
         </field>
-    </record> -->
+    </record>
 
     <!-- Form View -->
     <record id="view_hospital_patient_form" model="ir.ui.view">
