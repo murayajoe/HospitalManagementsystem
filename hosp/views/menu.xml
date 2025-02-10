@@ -6,17 +6,17 @@
             name="Hospital"
             sequence="0"/>
 
-        <!-- <menuitem
+        <menuitem
             id="menu_patient_master"
             name="Patient Details"
-            parent="menu_hospital_root"
+            parent_id="menu_hospital_root"
             sequence="1"/>
 
         <menuitem
             id="menu_patient"
             name="Hospital Patient"
-            parent="menu_patient_master"
+            parent_id="menu_patient_master"
             sequence="2"
-            action="action_hospital_patient"/> -->
+            action="action_hospital_patient"/>
     </data>
 </odoo>
