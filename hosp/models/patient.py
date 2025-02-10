@@ -12,5 +12,5 @@ class HospitalPatient(models.Model):
     next_of_kin_contact = fields.Char(string="Next of Kin Phone Number")
     identification_number = fields.Char(string="ID")
     insurance = fields.Selection([('Yes', 'Yes'), ('No', 'No')], string='Do you have insurance?')
-    insurance_number = fields.Char(string="Insurance Number")
+    insurance_number = fields.Integer(string="Insurance Number")
     weight = fields.Float(string="Weight")

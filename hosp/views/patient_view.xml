@@ -13,7 +13,9 @@
                 <field name="insurance" string="Insurance"/>
                 <field name="insurance_number" />
                 <field name="insurance"/>
-                </list>
+                <field name="weight"/>
+                <field name= "identification_number"/>
+            </list>
         </field>
     </record>
 
@@ -28,8 +30,12 @@
                         <field name="name" string="Patient Name"/>
                         <field name="age" string="Age"/>
                         <field name="gender" string="Gender"/>
+                    </group>
+                    <group>
                         <field name="insurance" string="Do you have insurance?"/>
                         <field name="insurance_number"/>
+                        <field name="weight"/>
+                        <field name= "identification_number"/>
                     </group>
                 </sheet>   
             </form>
