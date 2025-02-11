@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
+<!-- Search View -->
+<record id="view_hospital_patient_search" model="ir.ui.view">
+        <field name="name">hospital.patient.search</field>
+        <field name="model">hospital.patient</field>
+        <field name="arch" type="xml"> 
+            <search>
+                <field name="name" string="Patient Name"/>
+                <field name="age" string="Age"/>
+                <field name="gender" string="Gender"/>
+                
+            </search>
+        </field>
+    </record>
 
     <!-- Tree View -->
     <record id="view_hospital_patient_tree" model="ir.ui.view">
