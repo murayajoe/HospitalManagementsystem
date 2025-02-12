@@ -9,7 +9,11 @@
                 <field name="name" string="Patient Name"/>
                 <field name="age" string="Age"/>
                 <field name="gender" string="Gender"/>
-                
+                <filter name="filter_male" string="filter_male" domain="[('gender', '=', 'male')]"/>
+                <filter name="filter_female" string="filter_female" domain="[('gender', '=', 'female')]"/>
+                <separator/>
+                <filter name="filter_kid" string="filter_kid" domain="[('Age', '&lt', '5')]"/>
+ 
             </search>
         </field>
     </record>
