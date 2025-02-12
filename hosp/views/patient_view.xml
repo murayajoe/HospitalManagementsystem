@@ -15,7 +15,7 @@
                 <separator/>
                 
                 <!-- Fixed incorrect field reference (should be 'age', not 'Age') -->
-                <filter name="filter_kid" string="Kids" domain="[['age', '<=', 5]]"/>
+                <filter name="filter_kid" string="Kids" domain="[['age', '&lt;', 5]]"/>
                 
                 <group expand="0" string="Group By">
                     <!-- Fixed incorrect syntax and missing quotes around field names -->
