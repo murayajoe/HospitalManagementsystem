@@ -16,7 +16,7 @@
                 <group expand="0" string="Group By">
                 <filter string="Female" name="group_by_female" context="{'group_by': female, }"/>
                 <filter string="Male" name="group_by_male" context="{'group_by': male, }"/>
-                <filter string="Kids" name="group_by_kids" context="{'group_by': kids, }"/>
+                <!-- <filter string="Kids" name="group_by_kids" context="{'group_by': kids, }"/> -->
                 <filter string="Gender" name="group_by_gender" context="{'group_by': gender, }"/>
                 <filter string="Name" name="group_by_name" context="{'group_by': name, }"/>
                 <filter string="Age" name="group_by_age" context="{'group_by': age, }"/>
