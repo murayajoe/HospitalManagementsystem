@@ -13,7 +13,7 @@
             parent="menu_hospital_root"
             sequence="1"/>   
 
-        
+<!--         
         <menuitem
         id="menu_doctor_root"
         name="Doctor"
@@ -22,7 +22,7 @@
         id="menu_doctor_master"
         name="Doctor"
         parent="menu_doctor_root"
-        sequence="0"/>
+        sequence="0"/> -->
         
 </data>            
 </odoo>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<!-- <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
     <!-- Search View -->
     <!-- <record id="view_hospital_doctor_search" model="ir.ui.view">
@@ -89,4 +89,4 @@
         parent="menu_doctor_master"
         action="action_hospital_patient"
         sequence="2"/>
-</odoo>
+</odoo> -->
