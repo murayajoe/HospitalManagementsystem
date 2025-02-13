@@ -56,6 +56,7 @@
                         <field name="name" string="Patient Name"/>
                         <field name="age" string="Age"/>
                         <field name="gender" string="Gender"/>
+                        <field name="active" string="Active"/>
                     </group>
                     <group>
                         <field name="insurance" string="Do you have insurance?"/>
