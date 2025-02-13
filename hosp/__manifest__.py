@@ -14,8 +14,9 @@
     'license': 'LGPL-3',
     'depends': [],
     'data': [
-        'views/menu.xml',
-        
+        'security/ir.model.access.csv',
+        'views/menu.xml', 
+        'views/patient_view.xml',    
     ],
     'assets': {},
     'installable': True,

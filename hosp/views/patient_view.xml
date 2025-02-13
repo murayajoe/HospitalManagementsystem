@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- Search View -->
+    <record id="view_hospital_patient_search" model="ir.ui.view">
+        <field name="name">hospital.patient.search</field>
+        <field name="model">hospital.patient</field>
+        <field name="arch" type="xml"> 
+            <search>
+                <field name="name" string="Patient Name"/>
+                <field name="age" string="Age"/>
+                <field name="gender" string="Gender"/>
+                
+                <filter name="filter_male" string="Male" domain="[['gender', '=', 'male']]"/>
+                <filter name="filter_female" string="Female" domain="[['gender', '=', 'female']]"/>
+                <separator/>
+                <filter name="active" string="Archived" domain="[['active', '=', 'False' ]]"/>
+                <filter name="filter_kid" string="Kids" domain="[['age', '&lt;', 5]]"/>
+                
+                <group expand="0" string="Group By">
+                    <filter string="Female" name="group_by_female" context="{'group_by': 'gender'}" domain="[['gender', '=', 'female']]"/>
+                    <filter string="Male" name="group_by_male" context="{'group_by': 'gender'}" domain="[['gender', '=', 'male']]"/>
+                    <filter string="Gender" name="group_by_gender" context="{'group_by': 'gender'}"/>
+                    <filter string="Name" name="group_by_name" context="{'group_by': 'name'}"/>
+                    <filter string="Age" name="group_by_age" context="{'group_by': 'age'}"/>
+                    <filter string="ID Number" name="group_by_identification_number" context="{'group_by': 'identification_number'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <!-- List View -->
+    <record id="view_hospital_patient_list" model="ir.ui.view">
+        <field name="name">hospital.patient.list</field>
+        <field name="model">hospital.patient</field>
+        <field name="arch" type="xml"> 
+            <list>
+                <field name="name" string="Patient Name"/>
+                <field name="age" string="Age"/>
+                <field name="gender" string="Gender"/>
+                <field name="insurance" string="Insurance"/>
+                <field name="insurance_number" string="Insurance Number"/>
+                <field name="weight" string="Weight"/>
+                <field name="identification_number" string="ID Number"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- Form View -->
+    <record id="view_hospital_patient_form" model="ir.ui.view">
+        <field name="name">hospital.patient.form</field>
+        <field name="model">hospital.patient</field>
+        <field name="arch" type="xml"> 
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name" string="Patient Name"/>
+                        <field name="age" string="Age"/>
+                        <field name="gender" string="Gender"/>
+                        <field name="active" string="Active"/>
+                    </group>
+                    <group>
+                        <field name="insurance" string="Do you have insurance?"/>
+                        <field name="insurance_number" string="Insurance Number"/>
+                        <field name="weight" string="Weight"/>
+                        <field name="identification_number" string="ID Number"/>
+                    </group>
+                </sheet>   
+            </form>
+        </field>
+    </record>
+
+    <!-- Action -->
+    <record id="action_hospital_patient" model="ir.actions.act_window">
+        <field name="name">Patients</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">hospital.patient</field>
+        <field name="view_mode">list,form</field>
+        <field name="context">{}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create your first patient!
+            </p>
+        </field>
+    </record>
+
+    <!-- Menu Item -->
+    <menuitem
+        id="menu_patient"
+        name="Patient"
+        parent="menu_patient_master"
+        action="action_hospital_patient"
+        sequence="2"/>
+</odoo>
