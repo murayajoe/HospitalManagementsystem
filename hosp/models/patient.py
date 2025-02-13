@@ -14,4 +14,4 @@ class HospitalPatient(models.Model):
     insurance = fields.Selection([('Yes', 'Yes'), ('No', 'No')], string='Are you insured?')
     insurance_number = fields.Integer(string="Insurance Number")
     weight = fields.Float(string="Weight")
-    active = fields.Boolean(string="Active")
+    active = fields.Boolean(string="Active", default='True')
