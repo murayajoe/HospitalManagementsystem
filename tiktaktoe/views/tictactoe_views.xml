@@ -39,6 +39,6 @@
     <record id="tic_tac_toe_action" model="ir.actions.act_window">
         <field name="name">Tic-Tac-Toe Games</field>
         <field name="res_model">tic.tac.toe</field>
-        <field name="view_mode">list,form</field>
+        <field name="view_mode">form</field>
     </record>
 </odoo>
