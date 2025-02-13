@@ -13,17 +13,17 @@
                 <filter name="filter_male" string="Male" domain="[['gender', '=', 'male']]"/>
                 <filter name="filter_female" string="Female" domain="[['gender', '=', 'female']]"/>
                 <separator/>
-                
+                <filter name="active" string="Archived" domain="[['active', '=', 'False' ]]"/>
                 <filter name="filter_kid" string="Kids" domain="[['age', '&lt;', 5]]"/>
                 
-                <!-- <group expand="0" string="Group By">
+                <group expand="0" string="Group By">
                     <filter string="Female" name="group_by_female" context="{'group_by': 'gender'}" domain="[['gender', '=', 'female']]"/>
                     <filter string="Male" name="group_by_male" context="{'group_by': 'gender'}" domain="[['gender', '=', 'male']]"/>
                     <filter string="Gender" name="group_by_gender" context="{'group_by': 'gender'}"/>
                     <filter string="Name" name="group_by_name" context="{'group_by': 'name'}"/>
                     <filter string="Age" name="group_by_age" context="{'group_by': 'age'}"/>
                     <filter string="ID Number" name="group_by_identification_number" context="{'group_by': 'identification_number'}"/>
-                </group> -->
+                </group>
             </search>
         </field>
     </record>
