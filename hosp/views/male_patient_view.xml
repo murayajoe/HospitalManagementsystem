@@ -6,7 +6,7 @@
         <field name="name">male_Patients</field>
         <field name="type">ir.actions.act_window</field>
         <field name="res_model">hospital.patient</field>
-        <field name="view_mode">list, form</field>
+        <field name="view_mode">list,form</field>
         <field name="domain">[('gender', '=',  'male')]</field>
         <field name="context">{'default_gender': 'male'}</field>
         <field name="help" type="html">
