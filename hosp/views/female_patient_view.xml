@@ -2,11 +2,11 @@
 <odoo>
     <data>
     <!-- Action -->
-    <record id="action_female_patient" model="ir.actions.act_window">
+    <record id="action_hospital_female_patient" model="ir.actions.act_window">
         <field name="name">female_Patients</field>
         <field name="type">ir.actions.act_window</field>
-        <field name="res_model">female.patient</field>
-        <field name="view_mode">list,form</field>
+        <field name="res_model">hospital.patient</field>
+        <field name="view_mode">list, form</field>
         <field name="domain">[('gender', '=',  'female')]</field>
         <field name="context">{'default_gender': 'female'}</field>
         <field name="help" type="html">
