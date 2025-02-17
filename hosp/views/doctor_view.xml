@@ -6,7 +6,7 @@
         <field name="model">hospital.patient</field>
         <field name="arch" type="xml"> 
             <search>
-                <field name="name" string="doctor Name"/>
+                <field name="name" string="Doctor Name"/>
                 <field name="age" string="Age"/>
                 <field name="gender" string="Gender"/>
                 
@@ -34,7 +34,7 @@
         <field name="model">hospital.patient</field>
         <field name="arch" type="xml"> 
             <list>
-                <field name="name" string="doctor Name"/>
+                <field name="name" string="Doctor Name"/>
                 <field name="age" string="Age"/>
                 <field name="gender" string="Gender"/>
                 <field name="insurance" string="Insurance"/>
@@ -53,7 +53,7 @@
             <form>
                 <sheet>
                     <group>
-                        <field name="name" string="doctor Name"/>
+                        <field name="name" string="Doctor Name"/>
                         <field name="age" string="Age"/>
                         <field name="gender" string="Gender"/>
                     </group>
