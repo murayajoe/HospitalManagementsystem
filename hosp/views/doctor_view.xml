@@ -3,7 +3,7 @@
     <!-- Search View -->
     <record id="view_hospital_doctor_search" model="ir.ui.view">
         <field name="name">hospital.doctor.search</field>
-        <field name="model">hospital.doctor</field>
+        <field name="model">hospital.patient</field>
         <field name="arch" type="xml"> 
             <search>
                 <field name="name" string="doctor Name"/>
@@ -31,7 +31,7 @@
     <!-- List View -->
     <record id="view_hospital_doctor_list" model="ir.ui.view">
         <field name="name">hospital.doctor.list</field>
-        <field name="model">hospital.doctor</field>
+        <field name="model">hospital.patient</field>
         <field name="arch" type="xml"> 
             <list>
                 <field name="name" string="doctor Name"/>
@@ -48,7 +48,7 @@
     <!-- Form View -->
     <record id="view_hospital_doctor_form" model="ir.ui.view">
         <field name="name">hospital.doctor.form</field>
-        <field name="model">hospital.doctor</field>
+        <field name="model">hospital.patient</field>
         <field name="arch" type="xml"> 
             <form>
                 <sheet>
