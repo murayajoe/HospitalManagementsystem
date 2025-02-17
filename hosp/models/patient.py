@@ -15,3 +15,5 @@ class HospitalPatient(models.Model):
     insurance_number = fields.Integer(string="Insurance Number")
     weight = fields.Float(string="Weight")
     active = fields.Boolean(string="Active", default='True')
+class FemalePatient(models.Model):
+    _name = 'female.patient'
