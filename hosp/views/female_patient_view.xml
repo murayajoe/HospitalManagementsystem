@@ -19,7 +19,7 @@
     <!-- Menu Item -->
     <menuitem
         id="menu_female_patient"
-        name="Patient"
+        name="Female Patient"
         parent="menu_patient_master"
         action="action_female_patient"
         sequence="20"/>
