@@ -4,7 +4,7 @@
     'category': 'Helpdesk',
     'depends': ['helpdesk'],
     'data': [
-        'views/helpdesk_ticket_views.xml',
+        # 'views/helpdesk_ticket_views.xml',
         'security/ir.model.access.csv',
     ],
     'installable': True,
