@@ -1,4 +1,3 @@
-
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
     <data>
@@ -19,11 +18,11 @@
 
     <!-- Menu Item -->
     <menuitem
-        id="menu_patient"
+        id="menu_female_patient"
         name="Patient"
         parent="menu_patient_master"
-        action="action_femle_patient"
-        sequence="2"/>
+        action="action_female_patient"
+        sequence="20"/>
 
         
 
