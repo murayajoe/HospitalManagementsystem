@@ -1,0 +1,33 @@
+<odoo>
+    <data>
+        <!-- Inherit Helpdesk Ticket Form -->
+        <record id="view_helpdesk_ticket_form" model="ir.ui.view">
+            <field name="name">helpdesk.ticket.form</field>
+            <field name="model">helpdesk.ticket</field>
+            <field name="inherit_id" ref="helpdesk.view_helpdesk_ticket_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//header" position="inside">
+                    <button name="action_open_related_tickets" 
+                            string="Related Tickets" 
+                            type="object" 
+                            class="oe_highlight"/>
+                </xpath>
+            </field>
+        </record>
+
+        <!-- Action for the Related Tickets Button -->
+        <record id="action_open_related_tickets" model="ir.actions.server">
+            <field name="name">Open Related Tickets</field>
+            <field name="model_id" ref="helpdesk.model_helpdesk_ticket"/>
+            <field name="state" eval="'code'"/>
+            <field name="code">
+                action = {
+                    'type': 'ir.actions.act_window',
+                    'res_model': 'helpdesk.ticket',
+                    'view_mode': 'tree,form',
+                    'domain': [('id', 'in', record.related_ticket_ids.ids)],
+                }
+            </field>
+        </record>
+    </data>
+</odoo>

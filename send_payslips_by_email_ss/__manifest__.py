@@ -11,8 +11,8 @@
     "sequence": 1,
     "author": "ClickPoa",
     "license": "Other proprietary",
-    "website": "https://clickpoa.com",
-    "support": "support@clickpoa.com",
+    "website": "https://clickpoa.odoo.com",
+    "support": "",
     "description": """
     Just One Click and it's Gone!
    Save a lot of time by simplifying the process of
