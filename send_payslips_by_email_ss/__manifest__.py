@@ -1,4 +1,3 @@
-# noinspection PyStatementEffect
 {
     "name": "Send Payslip By Email",
     "summary": """
@@ -10,10 +9,10 @@
     "category": "Website",
     "version": "18.0.1.0.1",
     "sequence": 1,
-    "author": "Synodica Solutions Pvt. Ltd.",
+    "author": "ClickPoa",
     "license": "Other proprietary",
-    "website": "https://synodica.com",
-    "support": "support@synodica.com",
+    "website": "https://clickpoa.com",
+    "support": "support@clickpoa.com",
     "description": """
     Just One Click and it's Gone!
    Save a lot of time by simplifying the process of
@@ -28,10 +27,10 @@
         "wizard/payslip_wizard.xml",
         "views/view_hr_payslip.xml",
         "views/view_hr_payslip_run.xml",
-        "views/hr_employee_view.xml",
+        "views/hr_employee_view.xml"
     ],
     "images": ["static/description/Payslip.gif"],
     "application": True,
     "installable": True,
-    "auto_install": False,
+    "auto_install": False
 }
