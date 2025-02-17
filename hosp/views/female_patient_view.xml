@@ -8,7 +8,7 @@
         <field name="res_model">female.patient</field>
         <field name="view_mode">list,form</field>
         <field name="domain">[('gender', '=',  'female')]</field>
-        <field name="context">{}</field>
+        <field name="context">{'default_gender': 'female'}</field>
         <field name="help" type="html">
             <p class="o_view_nocontent_smiling_face">
                 Create your first female patient!
@@ -27,7 +27,4 @@
         
 
     </data>
-</odoo>
-
-    
 </odoo>
