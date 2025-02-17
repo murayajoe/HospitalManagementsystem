@@ -5,7 +5,7 @@
     'sequence': -100,
     'description': """
         A comprehensive Hospital Management System for managing patients, doctors,
-        appointments, medical records, billing, and more.
+        appointments, medical records, billing, and more.1
     """,
     'category': 'Healthcare',
     'author': 'Joe Muraya',
