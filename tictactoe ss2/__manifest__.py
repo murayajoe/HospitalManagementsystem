@@ -1,5 +1,5 @@
 {
-    'name': 'Tic-Tac-Toe Game',
+    'name': 'Tic_Tac_Toe_Game',
     'version': '1.0',
     'summary': 'Interactive Tic-Tac-Toe game inside Odoo',
     'author': 'Joe Muraya',
