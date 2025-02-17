@@ -1,4 +1,4 @@
-<odoo>
+<!-- <odoo>
     <record id="view_tictactoe_list" model="ir.ui.view">
         <field name="name">tic.tac.toe.list</field>
         <field name="model">tic.tac.toe</field>
@@ -42,4 +42,4 @@
         <field name="view_mode">form</field>
     </record>
 </odoo>
-1232
+1232 -->

@@ -6,7 +6,7 @@
     'author': 'Joe Muraya',
     'depends': ['base'],
     'data': [
-        'views/tictactoe_views.xml',
+        # 'views/tictactoe_views.xml',
     ],
     'assets': {
         'web.assets_backend': [
