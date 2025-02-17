@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="mail_template_new_payslip_for_employee" model="mail.template">
+        <field name="name"> Payslip from Employee</field>
+        <field name="model_id" ref="hr_payroll.model_hr_employee" />
+        <field
+            name="subject"
+        >{{ object.name }}, a new payslip is available for you</field>
+        <field name="email_from">{{ user.email_formatted }}</field>
+        <field name="email_to">{{ object.work_email }}</field>
+        <field name="body_html" type="html">
+<table
+                border="0"
+                cellpadding="0"
+                cellspacing="0"
+                style="width:100%; margin:0px auto;"
+            ><tbody>
+    <tr><td valign="top" style="text-align: left; font-size: 14px;">
+        Dear <t t-esc="object.name" />, a new payslip is available for you.<br /><br />
+        Please find the PDF in your employee portal.<br /><br />
+        Have a nice day,<br />
+        The HR Team
+    </td></tr>
+</tbody></table>
+            </field>
+            <field name="lang">{{ object.address_home_id.lang }}</field>
+            <field name="auto_delete" eval="True" />
+      </record>
+
+</odoo>
