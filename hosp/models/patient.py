@@ -18,6 +18,22 @@ class HospitalPatient(models.Model):
 class FemalePatient(models.Model):
     _name = 'female.patient'
 
+
+    name = fields.Char(string='Patient Name', required=True)
+    age = fields.Integer(string='Age')
+    gender = fields.Selection([('male', 'Male'), ('female', 'Female')], string='Gender')
+    contact = fields.Char(string="Phone Number")
+    next_of_kin_name = fields.Char(string="Next of Kin")
+    next_of_kin_contact = fields.Char(string="Next of Kin Phone Number")
+    identification_number = fields.Char(string="National ID")
+    insurance = fields.Selection([('Yes', 'Yes'), ('No', 'No')], string='Are you insured?')
+    insurance_number = fields.Integer(string="Insurance Number")
+    weight = fields.Float(string="Weight")
+    active = fields.Boolean(string="Active", default='True')
+
+    class MalePatient(models.Model):
+    _name = 'male.patient'
+
     
     name = fields.Char(string='Patient Name', required=True)
     age = fields.Integer(string='Age')
