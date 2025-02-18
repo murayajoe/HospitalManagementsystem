@@ -87,6 +87,6 @@
         id="menu_doctor"
         name="doctor"
         parent="menu_hospital_root"
-        action="action_hospital_patient"
+        action="action_hospital_doctor"
         sequence="2"/>
 </odoo>
