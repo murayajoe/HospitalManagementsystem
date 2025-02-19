@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
+<data>
+
     <!-- Search View -->
     <record id="view_hospital_patient_search" model="ir.ui.view">
         <field name="name">hospital.patient.search</field>
@@ -95,4 +97,5 @@
         parent="menu_patient_master"
         action="action_hospital_patient"
         sequence="2"/>
+</data>
 </odoo>
