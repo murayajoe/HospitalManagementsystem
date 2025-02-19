@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-<data>
+ <data>
         <menuitem
             id="menu_hospital_root"
             name="Hospital"
@@ -23,5 +23,5 @@
         parent="menu_doctor_root"
         sequence="0"/>
         
-</data>            
+ </data>            
 </odoo>

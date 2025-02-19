@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-    <data>
+ <data>
     <!-- Action -->
     <record id="action_hospital_male_patient" model="ir.actions.act_window">
         <field name="name">male_Patients</field>
@@ -26,5 +26,5 @@
 
         
 
-    </data>
+ </data>
 </odoo>
