@@ -1,27 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
  <data>
+        <!-- Root Menu -->
         <menuitem
             id="menu_hospital_root"
             name="Hospital"
-            web_icon="hosp,static/description/icon.png"
+            web_icon="hospital_management,static/description/icon.png"
             sequence="0"/>
 
+        <!-- Patient Menu -->
         <menuitem
             id="menu_patient_master"
             name="Patient Details"
             parent="menu_hospital_root"
             sequence="1"/>   
       
+        <!-- Doctor Menu -->
         <menuitem
-        id="menu_doctor_root"
-        name="Doctor"
-        sequence="0"/>
+            id="menu_doctor_root"
+            name="Doctors"
+            parent="menu_hospital_root" 
+            sequence="10"/>
+
         <menuitem
-        id="menu_doctor_master"
-        name="Doctor"
-        parent="menu_doctor_root"
-        sequence="0"/>
+            id="menu_doctor_master"
+            name="Doctor List"
+            parent="menu_doctor_root"
+            sequence="10"/>
         
  </data>            
 </odoo>
