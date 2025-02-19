@@ -18,7 +18,7 @@
   "summary"              :  """This module allows you to set various attributes of bank cheque dynamically, so you can print bank cheque in a easy manner.""",
   "category"             :  "Accounting",
   "version"              :  "18.0.1",
-  "sequence"             :  1,
+  "sequence"             :  -111,
   "author"               :  "Webkul Software Pvt. Ltd.",
   "license"              :  "Other proprietary",
   "website"              :  "https://store.webkul.com/Odoo-Dynamic-Bank-Cheque-Print.html",

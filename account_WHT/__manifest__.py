@@ -11,6 +11,7 @@
 
     'author': "One Stop Odoo",
     'maintainer': "One Stop Odoo",
+    'sequence' : '-113',
     'website': "https://www.onestopodoo.com",
     'license': 'OPL-1',
     'category': 'Accounting',
