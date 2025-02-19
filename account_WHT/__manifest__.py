@@ -11,7 +11,7 @@
 
     'author': "One Stop Odoo",
     'maintainer': "One Stop Odoo",
-    'sequence' : '-113',
+    'sequence': '-113',
     'website': "https://www.onestopodoo.com",
     'license': 'OPL-1',
     'category': 'Accounting',
@@ -34,7 +34,7 @@
         'static/description/icon.png',
     ],
 
-     'price': 190,
+    #  'price': 190,
      'currency': 'USD',
      'installable': True,
      'auto_install': False,
