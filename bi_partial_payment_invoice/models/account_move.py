@@ -7,7 +7,7 @@ from odoo import api, fields, models, _
 from odoo.exceptions import UserError, ValidationError
 from datetime import datetime
 from datetime import date, timedelta
-from odoo.tools import float_is_zero, float_compare, safe_eval, date_utils, email_split,email_re
+from odoo.tools import float_is_zero, float_compare, safe_eval, date_utils, email_split,
 
 
 class ResCompany(models.Model):
