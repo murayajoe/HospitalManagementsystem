@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="wht_bill_wizard_view_form" model="ir.ui.view">
+        <field name="name">wht_bill_wizard_view_form</field>
+        <field name="model">wht.bill.wizard</field>
+        <field name="arch" type="xml">
+            <form string="wht_bill_wizard_form">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="date_from" required="1"/>
+                            <field name="partner_id" required="1"/>
+                            <field name="check_all"/>
+                        </group>
+                        <group>
+                            <field name="date_to" required="1"/>
+                            <field name="payment_state" required="1"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group name="left_panel">
+                        </group>
+
+                        <group class="oe_subtotal_footer oe_right">
+                            <button string="Search" name="search_records" type="object" class="btn-primary"/>
+                        </group>
+                    </group>
+
+                    <notebook colspan="4">
+                        <page string="Lines">
+                            <field name="wht_bill_line_ids">
+                                <tree create="false" edit="true" editable="bottom">
+                                    <field name="check"/>
+                                    <field name="move_id" readonly="1" string="Bill" required="1"/>
+                                    <field name="date"/>
+                                    <field name="partner_id"/>
+                                    <field name="amount_untaxed"/>
+                                    <field name="amount_total" string="Amount Total"/>
+                                    <field name="payment_state"/>
+                                    <field name="tax_ids" widget="many2many_tags" readonly="1" string="Taxes"/>
+                                    <field name="wht_ids" widget="many2many_tags" readonly="1" string="WHT"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                    <footer>
+                        <button string="Create Bills" name="create_bills" type="object"
+                                class="btn-primary"/>
+                        <button string="Discard" class="btn-default" special="cancel"/>
+                    </footer>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="wht_bill_wizard_action" model="ir.actions.act_window">
+        <field name="name">WHT Bill</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">wht.bill.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+    <menuitem id="wht_bill_wizard_menu"
+              name="Generate WHT Bill"
+              parent="account.account_invoicing_menu"
+              action="wht_bill_wizard_action"
+              sequence="4"/>
+</odoo>

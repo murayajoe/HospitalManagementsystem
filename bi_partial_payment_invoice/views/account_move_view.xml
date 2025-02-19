@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data>
+	   
+		<!-- <template id="assets_backend_payment" name="account assets" inherit_id="web.assets_backend">
+			<xpath expr="." position="inside">
+				<script type="text/javascript" src="/bi_partial_payment_invoice/static/src/js/account_payment.js"></script>
+			</xpath>
+		</template> -->
+
+
+		<record id="bi_partial_matching_number_move_view" model="ir.ui.view">
+			<field name="name">vendor.matching.move.view</field>
+			<field name="model">account.move</field>
+			<field name="inherit_id" ref="account.view_move_form"/>
+			<field name="arch" type="xml">
+
+				<field name="ref" position="after">
+					<field name="report_user_id" invisible="1"/>
+					<field name="report_date" invisible="1"/>
+				</field>
+
+				<field name="invoice_origin" position="after">
+					<field name="ref_text" />
+				</field>
+
+				<xpath expr="//field[@name='line_ids']/tree/field[@name='name']" position="after">
+					<field name="partial_matching_number" column_invisible="1"/>
+					<field name="in_payment" column_invisible="1"/>
+					<field name="last_line_number" column_invisible="1"/>
+					<field name="last_amount" column_invisible="1"/>
+				</xpath>
+
+				<xpath expr="//field[@name='invoice_line_ids']/tree/field[@name='price_unit']" position="after">
+					<field name="partial_matching_number" column_invisible="1"/>
+					<field name="in_payment" column_invisible="1"/>
+					<field name="last_line_number" column_invisible="1"/>
+					<field name="last_amount" column_invisible="1"/>
+				</xpath>
+			</field>
+		</record>
+
+		<record id="account_invoice_view_devlopment_tree" model="ir.ui.view">
+			<field name="name">account.move.tree.inherit.sale</field>
+			<field name="model">account.move</field>
+			<field name="inherit_id" ref="account.view_invoice_tree"/>
+			<field name="arch" type="xml">
+
+				<xpath expr="//tree" position="attributes">
+					<attribute name="multi_edit">1</attribute>
+				</xpath>
+				<field name="amount_untaxed_signed" position="replace">
+					<field name="amount_untaxed" string="Tax Excluded" sum="Total" optional="show"/>
+				</field>
+				<field name="amount_tax_signed" position="replace">
+					<field name="amount_tax" string="Tax" sum="Total" optional="hide"/>
+				</field>
+				<field name="amount_total_signed" position="replace">
+					<field name="amount_total" string="Total" sum="Total" optional="show"/>
+				</field>
+				<field name="amount_residual_signed" position="replace">
+					<field name="amount_residual" string="Amount Due" sum="Amount Due" optional="show"/>
+				</field>
+				<!-- <field name="amount_untaxed_signed" string="Tax Excluded" sum="Total" optional="show"/>
+				<field name="amount_tax_signed" string="Tax" sum="Total" optional="hide"/>
+				<field name="amount_total_signed" string="Total" sum="Total" optional="show"/>
+				<field name="amount_residual_signed" string="Amount Due" sum="Amount Due" optional="show"/> -->
+			</field>
+		</record>
+
+
+		
+		
+		<record id="view_move_line_partial_matching_number_" model="ir.ui.view">
+			<field name="name">account.move.line.partial.matching</field>
+			<field name="model">account.move.line</field>
+			<field name="inherit_id" ref="account.view_move_line_tree"/>
+			<field name="arch" type="xml">
+				<field name="credit" position="after">
+					<field name="partial_matching_number"/>
+				</field>
+			</field>
+		</record>
+
+
+		<record id="sale_view_move_line_tree_grouped" model="ir.ui.view">
+			<field name="name">account.move.line.tree.grouped</field>
+			<field name="model">account.move.line</field>
+			<field eval="1" name="priority"/>
+			<field name="inherit_id" ref="account.view_move_line_tree" />
+			<field name="arch" type="xml">
+				<field name="debit" position="before">
+					<field name="partial_matching_number"/>
+					<field name="amount_residual"/>
+					<field name="amount_residual_currency"/>
+				</field>
+			</field>
+		</record>
+	</data>
+</odoo>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="account_WHT.account_wht_form" model="ir.ui.view">
+            <field name="name">account_wht account_wht_form</field>
+            <field name="model">account.wht</field>
+            <field name="arch" type="xml">
+                <form string="Account WHT Form">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name"/>
+                                <field name="tax_code"/>
+                                <field name="description"/>
+                                <field name="active" widget="boolean_button" options='{"terminology": "archive"}'/>
+                            </group>
+                            <group>
+                                <field name="type_tax_use"/>
+                                <field name="sale_tax_id"
+                                       invisible="type_tax_use not in ['tax']"
+                                />
+                                <field name="tax_application" widget="radio" invisible="1"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page name="definition" string="Definition">
+                                <group>
+                                    <group>
+                                        <field name="amount_type" invisible="1"/>
+                                        <label
+                                                for="amount"
+                                                string="Tax Rate"
+                                                invisible="amount_type not in ('fixed', 'percent', 'division','wht')"
+
+                                        />
+                                        <div invisible="amount_type not in ('fixed', 'percent', 'division','wht')">
+
+                                            <field name="amount" class="oe_inline"/>
+                                            <label string="%"
+                                                   class="oe_inline"
+                                                   for="amount"
+                                                   invisible="amount_type == 'fixed'"/>
+                                        </div>
+                                    </group>
+                                    <group invisible="amount_type == 'group'"
+                                           groups="account.group_account_user">
+                                        <field name="account_id"/>
+                                        <field name="refund_account_id"/>
+                                    </group>
+                                </group>
+
+                            </page>
+                            <page name="advance_options" string="Advanced Options">
+                                <group>
+                                    <group>
+                                        <field name="tax_group_id"/>
+                                        <field name="company_id" groups="base.group_multi_company"/>
+                                    </group>
+                                </group>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="account_WHT.account_wht_tree" model="ir.ui.view">
+            <field name="name">account_wht account_wht_tree</field>
+            <field name="model">account.wht</field>
+            <field name="arch" type="xml">
+                <tree string="Account WHT Tree">
+                    <field name="name"/>
+                    <field name="tax_code"/>
+                    <field name="type_tax_use"/>
+                    <field name="description"/>
+                    <field name="company_id"
+                           options="{'no_create': True}"
+                           groups="base.group_multi_company"
+                    />
+                    <field name="active" widget="boolean_toggle"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="account_WHT.account_wht_action" model="ir.actions.act_window">
+            <field name="name">Withholding Tax</field>
+            <field name="res_model">account.wht</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="account_WHT.account_wht_tree"/>
+        </record>
+
+        <menuitem
+                action="account_WHT.account_wht_action"
+                id="account_WHT.account_wht"
+                parent="account.account_invoicing_menu"
+                sequence="3"
+        />
+    </data>
+</odoo>

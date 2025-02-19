@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_account_wht,account.wht,model_account_wht,,1,1,1,1
+access_account_move_wht,account.move.wht,model_account_move_wht,,1,1,1,1
+access_account_move_tax,account.move.tax,model_account_move_tax,,1,1,1,1
+access_account_move_tax_lines,account.move.tax.lines,model_account_move_tax_lines,,1,1,1,1
+access_wht_bill_wizard,wht.bill.wizard,model_wht_bill_wizard,,1,1,1,1
+access_wht_bill_wizard_lines,wht.bill.wizard.lines,model_wht_bill_wizard_lines,,1,1,1,1

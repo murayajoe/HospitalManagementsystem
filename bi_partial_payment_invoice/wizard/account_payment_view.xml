@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="account_payment_wizard_form">
+            <field name="name">account.payment.wizard.form</field>
+            <field name="model">account.payment.wizard</field>
+            <field name="arch" type="xml">
+                <form string="Payment Wizard">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name" invisible='1'/>
+                                <field name="amount_total" readonly="1"/>
+                                <field name="amount_residual" readonly="1"/>
+                                <field name="move_id" readonly="1"/>
+                                <field name="currency_id" readonly="1"/>
+                            </group>
+                            <group>
+                                <field name="move_line_id" readonly="1"/>
+                                <field name="payment_id" readonly="1"/>
+                                <field name="company_id" readonly="1"/>
+                                <field name="company_currency_id" readonly="1"/>
+                            </group>
+                        </group>
+                        <group>
+                            <group>
+                                <field name="amount_to_pay" />
+                            </group>
+                            <group>
+                                <field name="amount_remain"/>
+                                <field name="amount_due_remain"  />
+                            </group>
+                        </group>
+                    </sheet>
+                    <footer>
+                        <button string="Discard" class="btn btn-secondary" special="cancel"/>
+                        <button name="partial_pay" string=" Register Payment " type="object" class="btn btn-primary" icon="fa-money" style="float: right;"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_payment_wizard_open" model="ir.actions.act_window">
+            <field name="name">Payment Wizard</field>
+            <field name="res_model">account.payment.wizard</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+
+    </data>
+</odoo>

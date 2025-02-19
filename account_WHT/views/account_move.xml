@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="invoice_form_inherit_for_withholding_tax" model="ir.ui.view">
+            <field name="name">account.invoice.inherit</field>
+            <field name="model">account.move</field>
+            <field name="inherit_id" ref="account.view_move_form"/>
+            <field name="arch" type="xml">
+
+                <field name="tax_ids" position="after">
+                    <field
+                            name="wht_tax_ids"
+                            widget="many2many_tags"
+                            domain="['|',('type_tax_use', '=?', parent.invoice_filter_type_domain),('type_tax_use', '=', 'tax')]"
+                            options="{'no_create': True}"
+                            force_save="1"
+                    />
+                </field>
+                <xpath expr="//field[@name='line_ids']/tree/field[@name='tax_ids']"
+                       position='after'>
+                    <field
+                            name="wht_tax_ids"
+                            widget="many2many_tags"
+                            options="{'no_create': True}"
+                            domain="['|',('type_tax_use', '=?', parent.invoice_filter_type_domain),('type_tax_use', '=', 'tax')]"
+                            force_save="1"
+                            invisible="1"
+                    />
+                    <field name="is_wht_line" invisible="1"/>
+                </xpath>
+                <xpath expr="//page[@id='other_tab']/group[@id='other_tab_group']/group[@name='accounting_info_group']"
+                       position='after'>
+                    <group string="Taxes" name="tax_info_group"
+                           invisible="move_type not in ('out_invoice', 'out_refund', 'in_invoice', 'in_refund')">
+                    </group>
+                    <field name="tax_line_ids">
+                        <tree editable="bottom" string="Taxes" create="0">
+                            <field name="name"/>
+                            <!--Need invisible fields for on_change to create all necessary info -->
+                            <field name="tax_id" invisible="1"/>
+                            <field name="analytic_account_id" invisible="1"/>
+                            <field name="sequence" invisible="1"/>
+                            <field name="manual" invisible="1"/>
+                            <field name="account_id" groups="account.group_account_user"/>
+                            <field name="amount" invisible="1"/>
+                            <field name="amount_rounding" invisible="1"/>
+                            <field name="amount_total"/>
+                            <field name="currency_id" invisible="1" force_save="1"/>
+                        </tree>
+                    </field>
+                </xpath>
+                <xpath expr='//notebook' position='inside'>
+                    <page name="wht_info" string="WHT Info" invisible="1">
+                        <field name="wht_line_ids">
+                            <tree string="WHT Tree">
+                                <field name="move_id" invisible="1"/>
+                                <field name="name"/>
+                                <field name="account_id"/>
+                                <field name="amount"/>
+                            </tree>
+                        </field>
+                    </page>
+                </xpath>
+
+                <!--                Adding taxes tree view on move form -->
+                <xpath expr="//page[@id='invoice_tab']/field[@name='invoice_line_ids']" position="after">
+                    <div>
+                        <h4>WITHHOLDING TAX</h4>
+                        <div class="oe_inline">
+                            <field name="taxes_line_ids" readonly="1" force_save="1">
+                                <tree editable="bottom" string="Taxes">
+                                    <field name="name"/>
+                                    <!--Need invisible fields for on_change to create all necessary info -->
+                                    <field name="tax_id" invisible="1"/>
+                                    <field name="wht_tax_id" invisible="1"/>
+                                    <field name="account_id" groups="account.group_account_user"/>
+                                    <field name="amount" sum="Total"/>
+                                </tree>
+                            </field>
+                        </div>
+                    </div>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

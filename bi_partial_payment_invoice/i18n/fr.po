@@ -1,0 +1,545 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* bi_partial_payment_invoice
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-10-11 09:31+0000\n"
+"PO-Revision-Date: 2022-10-11 15:10+0530\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 3.1.1\n"
+
+#. module: bi_partial_payment_invoice
+#: code:addons/bi_partial_payment_invoice/models/account_move.py:0
+#, python-format
+msgid ""
+"Account %s does not allow reconciliation. First change the configuration of "
+"this account to allow it."
+msgstr ""
+"Le compte %s n'autorise pas le rapprochement. Modifiez d'abord la "
+"configuration de ce compte pour l'autoriser."
+
+#. module: bi_partial_payment_invoice
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_account_payment_wizard__move_id
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_multi_move_line__move_id
+msgid "Account Move"
+msgstr "Transfert de compte"
+
+#. module: bi_partial_payment_invoice
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_account_payment_wizard__move_line_id
+msgid "Account Move Line"
+msgstr "Ligne de transfert de compte"
+
+#. module: bi_partial_payment_invoice
+#: model:ir.model,name:bi_partial_payment_invoice.model_account_multi_payment_wizard
+#: model:ir.model,name:bi_partial_payment_invoice.model_multi_move_line
+msgid "Account Multiple Payment Wizard"
+msgstr "Assistant Paiements multiples de compte"
+
+#. module: bi_partial_payment_invoice
+#: model:ir.model,name:bi_partial_payment_invoice.model_account_payment_wizard
+msgid "Account Payment Wizard"
+msgstr "Assistant de paiement de compte"
+
+#. module: bi_partial_payment_invoice
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_account_payment_wizard__amount_residual
+#: model_terms:ir.ui.view,arch_db:bi_partial_payment_invoice.account_invoice_view_devlopment_tree
+msgid "Amount Due"
+msgstr "Montant dû"
+
+#. module: bi_partial_payment_invoice
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_account_payment_wizard__amount_currency
+msgid "Amount In Currency"
+msgstr "Montant en devise"
+
+#. module: bi_partial_payment_invoice
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_account_payment_wizard__amount_total
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_multi_move_line__amount_total
+msgid "Amount Total"
+msgstr "Montant total"
+
+#. module: bi_partial_payment_invoice
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_account_payment_wizard__amount_to_pay
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_multi_move_line__amount_to_pay
+msgid "Amount to Pay"
+msgstr "Montant à payer"
+
+#. module: bi_partial_payment_invoice
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_res_users__account_id
+msgid "Bank Account"
+msgstr "Compte bancaire"
+
+#. module: bi_partial_payment_invoice
+#: model:ir.model,name:bi_partial_payment_invoice.model_account_bank_statement_line
+msgid "Bank Statement Line"
+msgstr "Ligne de relevé bancaire"
+
+#. module: bi_partial_payment_invoice
+#: model:ir.model,name:bi_partial_payment_invoice.model_res_company
+msgid "Companies"
+msgstr "Sociétés"
+
+#. module: bi_partial_payment_invoice
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_account_multi_payment_wizard__company_id
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_account_payment_wizard__company_id
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_multi_move_line__company_id
+msgid "Company"
+msgstr "Compagnie"
+
+#. module: bi_partial_payment_invoice
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_account_multi_payment_wizard__company_currency_id
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_account_payment_wizard__company_currency_id
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_multi_move_line__company_currency_id
+msgid "Company Currency"
+msgstr "Devise de l'entreprise"
+
+#. module: bi_partial_payment_invoice
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_account_multi_payment_wizard__create_uid
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_account_payment_wizard__create_uid
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_multi_move_line__create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: bi_partial_payment_invoice
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_account_multi_payment_wizard__create_date
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_account_payment_wizard__create_date
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_multi_move_line__create_date
+msgid "Created on"
+msgstr "Créé sur"
+
+#. module: bi_partial_payment_invoice
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_account_multi_payment_wizard__currency_id
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_account_payment_wizard__currency_id
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_multi_move_line__currency_id
+msgid "Currency"
+msgstr "Devise"
+
+#. module: bi_partial_payment_invoice
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_multi_move_line__curr_amount_to_pay
+msgid "Currency Amount to Pay"
+msgstr "Devise Montant à payer"
+
+#. module: bi_partial_payment_invoice
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_account_multi_payment_wizard__amount_residual_currency
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_multi_move_line__amount_residual_currency
+msgid "Currency Residual Amount"
+msgstr "Devise Montant résiduel"
+
+#. module: bi_partial_payment_invoice
+#: model:ir.model.fields.selection,name:bi_partial_payment_invoice.selection__account_multi_payment_wizard__partner_type__customer
+msgid "Customer"
+msgstr "Cliente"
+
+#. module: bi_partial_payment_invoice
+#: code:addons/bi_partial_payment_invoice/models/account_payment.py:0
+#: model:ir.model.fields.selection,name:bi_partial_payment_invoice.selection__account_multi_payment_wizard__payment_type__payin
+#, python-format
+msgid "Customer Payment"
+msgstr "Paiement client"
+
+#. module: bi_partial_payment_invoice
+#: code:addons/bi_partial_payment_invoice/models/account_payment.py:0
+#, python-format
+msgid "Customer Reimbursement"
+msgstr "Remboursement client"
+
+#. module: bi_partial_payment_invoice
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_account_multi_payment_wizard__payment_id
+msgid "Customer/Vendor Payment"
+msgstr "Paiement client/fournisseur"
+
+#. module: bi_partial_payment_invoice
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_account_multi_payment_wizard__move_line_id
+msgid "Customer/Vendor Payment Line"
+msgstr "Ligne de paiement client/fournisseur"
+
+#. module: bi_partial_payment_invoice
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_account_bank_statement_line__report_date
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_account_move__report_date
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_account_payment__report_date
+msgid "Date"
+msgstr "Date"
+
+#. module: bi_partial_payment_invoice
+#: model_terms:ir.ui.view,arch_db:bi_partial_payment_invoice.account_multi_payment_wizard_form
+#: model_terms:ir.ui.view,arch_db:bi_partial_payment_invoice.account_payment_wizard_form
+msgid "Discard"
+msgstr "Jeter"
+
+#. module: bi_partial_payment_invoice
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_account_multi_payment_wizard__display_name
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_account_payment_wizard__display_name
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_multi_move_line__display_name
+msgid "Display Name"
+msgstr "Afficher un nom"
+
+#. module: bi_partial_payment_invoice
+#: code:addons/bi_partial_payment_invoice/models/account_move.py:0
+#, python-format
+msgid "Entries are not from the same account: %s != %s"
+msgstr "Les entrées ne proviennent pas du même compte : %s != %s"
+
+#. module: bi_partial_payment_invoice
+#: code:addons/bi_partial_payment_invoice/models/account_move.py:0
+#, python-format
+msgid "Entries doesn't belong to the same company: %s != %s"
+msgstr "Les entrées n'appartiennent pas à la même société : %s != %s"
+
+#. module: bi_partial_payment_invoice
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_account_multi_payment_wizard__id
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_account_payment_wizard__id
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_multi_move_line__id
+msgid "ID"
+msgstr "IDENTIFIANT"
+
+#. module: bi_partial_payment_invoice
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_account_move_line__in_payment
+msgid "In Payment"
+msgstr "En paiement"
+
+#. module: bi_partial_payment_invoice
+#: code:addons/bi_partial_payment_invoice/models/account_payment.py:0
+#, python-format
+msgid "Internal Transfer"
+msgstr "Transfert interne"
+
+#. module: bi_partial_payment_invoice
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_multi_move_line__is_comapany
+msgid "Is Company"
+msgstr "Est la société"
+
+#. module: bi_partial_payment_invoice
+#: model:ir.model,name:bi_partial_payment_invoice.model_account_move
+msgid "Journal Entry"
+msgstr "Pièce comptable"
+
+#. module: bi_partial_payment_invoice
+#: model:ir.model,name:bi_partial_payment_invoice.model_account_move_line
+msgid "Journal Item"
+msgstr "Écriture comptable"
+
+#. module: bi_partial_payment_invoice
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_account_move_line__last_amount
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_account_multi_payment_wizard__last_amount
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_account_payment__last_amount
+msgid "Last Amount"
+msgstr "Dernier montant"
+
+#. module: bi_partial_payment_invoice
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_account_move_line__last_line_number
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_res_company__last_line_number
+msgid "Last Line Number"
+msgstr "Dernier numéro de ligne"
+
+#. module: bi_partial_payment_invoice
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_account_multi_payment_wizard____last_update
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_account_payment_wizard____last_update
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_multi_move_line____last_update
+msgid "Last Modified on"
+msgstr "Dernière modification le"
+
+#. module: bi_partial_payment_invoice
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_res_company__last_move_number
+msgid "Last Move Number"
+msgstr "Numéro du dernier coup"
+
+#. module: bi_partial_payment_invoice
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_account_multi_payment_wizard__write_uid
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_account_payment_wizard__write_uid
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_multi_move_line__write_uid
+msgid "Last Updated by"
+msgstr "Dernière mise à jour par"
+
+#. module: bi_partial_payment_invoice
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_account_multi_payment_wizard__write_date
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_account_payment_wizard__write_date
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_multi_move_line__write_date
+msgid "Last Updated on"
+msgstr "Dernière mise à jour le"
+
+#. module: bi_partial_payment_invoice
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_account_bank_statement_line__manual_partner_id
+msgid "Manual Partner"
+msgstr "Partenaire manuel"
+
+#. module: bi_partial_payment_invoice
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_multi_move_line__move_line_id
+msgid "Move Line"
+msgstr "Déplacer la ligne"
+
+#. module: bi_partial_payment_invoice
+#: model_terms:ir.ui.view,arch_db:bi_partial_payment_invoice.account_multi_payment_wizard_form
+msgid "Move Lines"
+msgstr "Déplacer des lignes"
+
+#. module: bi_partial_payment_invoice
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_account_multi_payment_wizard__move_lines_ids
+msgid "Multiple Payments"
+msgstr "Paiements multiples"
+
+#. module: bi_partial_payment_invoice
+#: code:addons/bi_partial_payment_invoice/wizard/multiple_paymemt.py:0
+#, python-format
+msgid "No amount for Line %s"
+msgstr "Aucun montant pour la ligne %s"
+
+#. module: bi_partial_payment_invoice
+#: model:ir.actions.act_window,name:bi_partial_payment_invoice.action_partial_account_payments
+#: model:ir.actions.act_window,name:bi_partial_payment_invoice.action_partial_account_payments_payable
+#: model:ir.ui.menu,name:bi_partial_payment_invoice.menu_action_partial_account_payments_payable
+#: model:ir.ui.menu,name:bi_partial_payment_invoice.menu_action_partial_account_payments_receivable
+msgid "Partial Payments"
+msgstr "Paiements partiels"
+
+#. module: bi_partial_payment_invoice
+#: model:ir.model,name:bi_partial_payment_invoice.model_account_partial_reconcile
+msgid "Partial Reconcile"
+msgstr "Rapprochement"
+
+#. module: bi_partial_payment_invoice
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_account_move_line__partial_matching_number
+msgid "Partial matching"
+msgstr "Appariement partiel"
+
+#. module: bi_partial_payment_invoice
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_account_multi_payment_wizard__partner_id
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_multi_move_line__partner_id
+msgid "Partner"
+msgstr "Partenaire"
+
+#. module: bi_partial_payment_invoice
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_account_multi_payment_wizard__partner_type
+msgid "Partner Type"
+msgstr "Type de partenaire"
+
+#. module: bi_partial_payment_invoice
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_account_payment_wizard__payment_id
+#: model_terms:ir.ui.view,arch_db:bi_partial_payment_invoice.account_multi_payment_wizard_form
+msgid "Payment"
+msgstr "Paiement"
+
+#. module: bi_partial_payment_invoice
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_multi_move_line__payment_curr_id
+msgid "Payment Currency"
+msgstr "Monnaie de paiement"
+
+#. module: bi_partial_payment_invoice
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_account_multi_payment_wizard__name
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_account_payment_wizard__name
+msgid "Payment Name"
+msgstr "Nom du paiement"
+
+#. module: bi_partial_payment_invoice
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_account_multi_payment_wizard__payment_type
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_multi_move_line__payment_type
+msgid "Payment Type"
+msgstr "Type de paiement"
+
+#. module: bi_partial_payment_invoice
+#. openerp-web
+#: code:addons/bi_partial_payment_invoice/static/src/js/account_payment.js:0
+#: model:ir.actions.act_window,name:bi_partial_payment_invoice.action_payment_wizard_open
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_multi_move_line__multi_payment_id
+#: model_terms:ir.ui.view,arch_db:bi_partial_payment_invoice.account_multi_payment_wizard_form
+#: model_terms:ir.ui.view,arch_db:bi_partial_payment_invoice.account_payment_wizard_form
+#, python-format
+msgid "Payment Wizard"
+msgstr "Assistant de paiement"
+
+#. module: bi_partial_payment_invoice
+#: model:ir.model,name:bi_partial_payment_invoice.model_account_payment
+msgid "Payments"
+msgstr "Paiements"
+
+#. module: bi_partial_payment_invoice
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_account_payment__store_move_reconciled
+msgid "Reconciled Move"
+msgstr "Déménagement réconcilié"
+
+#. module: bi_partial_payment_invoice
+#: model_terms:ir.ui.view,arch_db:bi_partial_payment_invoice.account_multi_payment_wizard_form
+#: model_terms:ir.ui.view,arch_db:bi_partial_payment_invoice.account_payment_wizard_form
+msgid "Register Payment"
+msgstr "Enregistrer le paiement"
+
+#. module: bi_partial_payment_invoice
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_account_multi_payment_wizard__remain_amount
+msgid "Remain Amount"
+msgstr "Montant restant"
+
+#. module: bi_partial_payment_invoice
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_account_multi_payment_wizard__remain_amount_currency
+msgid "Remain Currency Amount"
+msgstr "Montant en devise restant"
+
+#. module: bi_partial_payment_invoice
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_account_payment_wizard__amount_due_remain
+msgid "Remaining Amount for Invoice"
+msgstr "Montant restant pour la facture"
+
+#. module: bi_partial_payment_invoice
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_account_payment_wizard__amount_remain
+msgid "Remaining Amount for Payment"
+msgstr "Montant restant pour le paiement"
+
+#. module: bi_partial_payment_invoice
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_account_multi_payment_wizard__amount_residual
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_multi_move_line__amount_residual
+msgid "Residual Amount"
+msgstr "Montant résiduel"
+
+#. module: bi_partial_payment_invoice
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_account_bank_statement_line__report_user_id
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_account_move__report_user_id
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_account_payment__report_user_id
+msgid "Responsible"
+msgstr "Responsable"
+
+#. module: bi_partial_payment_invoice
+#: code:addons/bi_partial_payment_invoice/wizard/account_payment.py:0
+#, python-format
+msgid "Something Went Wrong. Reset Payment and Try again."
+msgstr "Quelque chose a mal tourné. Réinitialisez le paiement et réessayez."
+
+#. module: bi_partial_payment_invoice
+#: model_terms:ir.ui.view,arch_db:bi_partial_payment_invoice.account_invoice_view_devlopment_tree
+msgid "Tax"
+msgstr "Impôt"
+
+#. module: bi_partial_payment_invoice
+#: model_terms:ir.ui.view,arch_db:bi_partial_payment_invoice.account_invoice_view_devlopment_tree
+msgid "Tax Excluded"
+msgstr "Taxe non comprise"
+
+#. module: bi_partial_payment_invoice
+#: model:ir.model.fields,help:bi_partial_payment_invoice.field_account_payment_wizard__payment_id
+msgid "The payment that created this entry"
+msgstr "Le paiement qui a créé cette entrée"
+
+#. module: bi_partial_payment_invoice
+#: model_terms:ir.ui.view,arch_db:bi_partial_payment_invoice.account_invoice_view_devlopment_tree
+msgid "Total"
+msgstr "Total"
+
+#. module: bi_partial_payment_invoice
+#: code:addons/bi_partial_payment_invoice/models/account_payment.py:0
+#, python-format
+msgid "Transfer from %s"
+msgstr "Transfert de %s"
+
+#. module: bi_partial_payment_invoice
+#: code:addons/bi_partial_payment_invoice/models/account_payment.py:0
+#, python-format
+msgid "Transfer to %s"
+msgstr "Transférer à %s"
+
+#. module: bi_partial_payment_invoice
+#: model:ir.model,name:bi_partial_payment_invoice.model_res_users
+msgid "Users"
+msgstr "Utilisateurs"
+
+#. module: bi_partial_payment_invoice
+#: model:ir.model.fields,help:bi_partial_payment_invoice.field_account_multi_payment_wizard__company_currency_id
+#: model:ir.model.fields,help:bi_partial_payment_invoice.field_account_multi_payment_wizard__currency_id
+#: model:ir.model.fields,help:bi_partial_payment_invoice.field_account_payment_wizard__company_currency_id
+#: model:ir.model.fields,help:bi_partial_payment_invoice.field_account_payment_wizard__currency_id
+#: model:ir.model.fields,help:bi_partial_payment_invoice.field_multi_move_line__company_currency_id
+#: model:ir.model.fields,help:bi_partial_payment_invoice.field_multi_move_line__currency_id
+#: model:ir.model.fields,help:bi_partial_payment_invoice.field_multi_move_line__payment_curr_id
+msgid "Utility field to express amount currency"
+msgstr "Champ utilitaire pour exprimer la devise du montant"
+
+#. module: bi_partial_payment_invoice
+#: model:ir.model.fields.selection,name:bi_partial_payment_invoice.selection__account_multi_payment_wizard__partner_type__supplier
+msgid "Vendor"
+msgstr "Vendeur"
+
+#. module: bi_partial_payment_invoice
+#: code:addons/bi_partial_payment_invoice/models/account_payment.py:0
+#: model:ir.model.fields.selection,name:bi_partial_payment_invoice.selection__account_multi_payment_wizard__payment_type__payout
+#, python-format
+msgid "Vendor Payment"
+msgstr "Paiement du fournisseur"
+
+#. module: bi_partial_payment_invoice
+#: code:addons/bi_partial_payment_invoice/models/account_payment.py:0
+#, python-format
+msgid "Vendor Reimbursement"
+msgstr "Remboursement du fournisseur"
+
+#. module: bi_partial_payment_invoice
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_account_bank_statement_line__ref_text
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_account_move__ref_text
+#: model:ir.model.fields,field_description:bi_partial_payment_invoice.field_account_payment__ref_text
+msgid "Voucher Reference"
+msgstr "Référence du bon"
+
+#. module: bi_partial_payment_invoice
+#: code:addons/bi_partial_payment_invoice/models/account_move.py:0
+#, python-format
+msgid "You are trying to reconcile some entries that are already reconciled."
+msgstr "Vous essayez de réconcilier certaines entrées déjà réconciliées."
+
+#. module: bi_partial_payment_invoice
+#: code:addons/bi_partial_payment_invoice/wizard/multiple_paymemt.py:0
+#, python-format
+msgid "You can not pay more than Residual Amount"
+msgstr "Vous ne pouvez pas payer plus que le montant résiduel"
+
+#. module: bi_partial_payment_invoice
+#: code:addons/bi_partial_payment_invoice/wizard/account_payment.py:0
+#, python-format
+msgid "You can not pay more then Remaining Amount. !!!"
+msgstr "Vous ne pouvez pas payer plus que le montant restant. !!!"
+
+#. module: bi_partial_payment_invoice
+#: code:addons/bi_partial_payment_invoice/models/account_payment.py:0
+#, python-format
+msgid ""
+"You can't create a new payment without an outstanding payments/receipts "
+"account set either on the company or the %s payment method in the %s "
+"journal."
+msgstr ""
+"Vous ne pouvez pas créer un nouveau paiement sans un compte de paiements/"
+"reçus en attente défini soit sur la société, soit sur le mode de paiement "
+"%s dans le journal %s."
+
+#. module: bi_partial_payment_invoice
+#: code:addons/bi_partial_payment_invoice/models/account_move.py:0
+#, python-format
+msgid "You cannot delete an item linked to a posted entry."
+msgstr "Vous ne pouvez pas supprimer un élément lié à une entrée publiée."
+
+#. module: bi_partial_payment_invoice
+#: code:addons/bi_partial_payment_invoice/models/account_move.py:0
+#, python-format
+msgid ""
+"You cannot modify a posted entry of this journal because it is in strict "
+"mode."
+msgstr ""
+"Vous ne pouvez pas modifier une écriture comptabilisée de ce journal car il "
+"est en mode strict."
+
+#. module: bi_partial_payment_invoice
+#: code:addons/bi_partial_payment_invoice/models/account_move.py:0
+#, python-format
+msgid "You cannot reset to draft a tax cash basis journal entry."
+msgstr ""
+"Vous ne pouvez pas réinitialiser pour ébaucher une écriture de journal sur "
+"la base de la comptabilité de caisse."
+
+#. module: bi_partial_payment_invoice
+#: code:addons/bi_partial_payment_invoice/models/account_move.py:0
+#, python-format
+msgid "You cannot reset to draft an exchange difference journal entry."
+msgstr ""
+"Vous ne pouvez pas réinitialiser pour rédiger une écriture au journal des "
+"différences de change."
