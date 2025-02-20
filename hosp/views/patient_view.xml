@@ -59,13 +59,33 @@
                         <field name="age" string="Age"/>
                         <field name="gender" string="Gender"/>
                         <field name="active" string="Active"/>
-                    </group>
-                    <group>
-                        <field name="insurance" string="Do you have insurance?"/>
+                         <field name="insurance" string="Do you have insurance?"/>
                         <field name="insurance_number" string="Insurance Number"/>
                         <field name="weight" string="Weight"/>
                         <field name="identification_number" string="ID Number"/>
                     </group>
+                   <group>
+                                <field name="blood_group"/>
+                                <field name="medical_history"/>
+                                <field name="allergies"/>
+                                <field name="chronic_diseases"/>
+                            </group>
+                            <group>
+                                <field name="last_visit_date"/>
+                                <field name="next_appointment_date"/>
+                                <field name="doctor_assigned"/>
+                            </group>
+                            <group>
+                                <field name="emergency_contact_name"/>
+                                <field name="emergency_contact_number"/>
+                                <field name="emergency_relationship"/>
+                            </group>
+                            <group>
+                                <field name="marital_status"/>
+                                <field name="address"/>
+                                <field name="occupation"/>
+                                <field name="payment_method"/>
+                            </group>
                 </sheet>   
                 <!-- chatter section -->
                 <div class="oe_chatter">
@@ -82,7 +102,7 @@
         <field name="name">Patients</field>
         <field name="type">ir.actions.act_window</field>
         <field name="res_model">hospital.patient</field>
-        <field name="view_mode">list,form</field>
+        <field name="view_mode">list,form,kanban</field>
         <field name="context">{}</field>
         <field name="help" type="html">
             <p class="o_view_nocontent_smiling_face">
