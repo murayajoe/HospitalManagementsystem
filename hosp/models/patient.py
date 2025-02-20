@@ -20,34 +20,34 @@ class HospitalPatient(models.Model):
 
 
 
-     # New Fields
-    blood_group = fields.Selection([
-        ('A+', 'A+'), ('A-', 'A-'), ('B+', 'B-'), ('B-', 'B-'),
-        ('O+', 'O+'), ('O-', 'O-'), ('AB+', 'AB+'), ('AB-', 'AB-')
-    ], string="Blood Group")
+    #  # New Fields
+    # blood_group = fields.Selection([
+    #     ('A+', 'A+'), ('A-', 'A-'), ('B+', 'B-'), ('B-', 'B-'),
+    #     ('O+', 'O+'), ('O-', 'O-'), ('AB+', 'AB+'), ('AB-', 'AB-')
+    # ], string="Blood Group")
 
-    medical_history = fields.Text(string="Medical History")
-    allergies = fields.Text(string="Allergies")
-    chronic_diseases = fields.Text(string="Chronic Diseases")
+    # medical_history = fields.Text(string="Medical History")
+    # allergies = fields.Text(string="Allergies")
+    # chronic_diseases = fields.Text(string="Chronic Diseases")
 
-    last_visit_date = fields.Date(string="Last Visit Date")
-    next_appointment_date = fields.Date(string="Next Appointment Date")
-    doctor_assigned = fields.Many2one('hospital.doctor', string="Assigned Doctor")
+    # last_visit_date = fields.Date(string="Last Visit Date")
+    # next_appointment_date = fields.Date(string="Next Appointment Date")
+    # doctor_assigned = fields.Many2one('hospital.doctor', string="Assigned Doctor")
 
-    emergency_contact_name = fields.Char(string="Emergency Contact Name")
-    emergency_contact_number = fields.Char(string="Emergency Contact Number")
-    emergency_relationship = fields.Selection([
-        ('parent', 'Parent'), ('spouse', 'Spouse'), ('child', 'Child'),
-        ('sibling', 'Sibling'), ('friend', 'Friend'), ('other', 'Other')
-    ], string="Relationship with Patient")
+    # emergency_contact_name = fields.Char(string="Emergency Contact Name")
+    # emergency_contact_number = fields.Char(string="Emergency Contact Number")
+    # emergency_relationship = fields.Selection([
+    #     ('parent', 'Parent'), ('spouse', 'Spouse'), ('child', 'Child'),
+    #     ('sibling', 'Sibling'), ('friend', 'Friend'), ('other', 'Other')
+    # ], string="Relationship with Patient")
 
-    marital_status = fields.Selection([
-        ('single', 'Single'), ('married', 'Married'), ('divorced', 'Divorced'),
-        ('widowed', 'Widowed')
-    ], string="Marital Status")
+    # marital_status = fields.Selection([
+    #     ('single', 'Single'), ('married', 'Married'), ('divorced', 'Divorced'),
+    #     ('widowed', 'Widowed')
+    # ], string="Marital Status")
 
-    address = fields.Text(string="Address")
-    occupation = fields.Char(string="Occupation")
-    payment_method = fields.Selection([
-        ('cash', 'Cash'), ('insurance', 'Insurance'), ('card', 'Card')
-    ], string="Preferred Payment Method")
+    # address = fields.Text(string="Address")
+    # occupation = fields.Char(string="Occupation")
+    # payment_method = fields.Selection([
+    #     ('cash', 'Cash'), ('insurance', 'Insurance'), ('card', 'Card')
+    # ], string="Preferred Payment Method")

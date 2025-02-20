@@ -54,8 +54,7 @@
                 <field name="marital_status"/>
                 <field name="address"/>
                 <field name="occupation"/>
-                <field name="payment_method"/> -->
-                                
+                <field name="payment_method"/> -->             
             </list>
         </field>
     </record>
@@ -79,7 +78,7 @@
                     </group>
                    
                 </sheet>   
-                </chatter>
+                <!-- </chatter> -->
                 <!-- chatter section -->
                 <!-- <div class="oe_chatter">
                     <field name="message_follower_ids" widget="mail_followers"/>
