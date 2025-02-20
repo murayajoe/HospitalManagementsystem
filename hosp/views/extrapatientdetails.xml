@@ -1,61 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
     <data>
-<record id="view_hospital_patient_form" model="ir.ui.view">
-    <field name="name">hospital.patient.form</field>
-    <field name="model">hospital.patient</field>
-    <field name="arch" type="xml">
-        <form string="Hospital Patient">
-            <sheet>
-                <group>
-                    <field name="name"/>
-                    <field name="age"/>
-                    <field name="gender"/>
-                    <field name="contact"/>
-                    <field name="category" required="1"/>
-                </group>
-                
-                <!-- Fields for Patients Only -->
-                <!-- <group attrs="{'invisible': [('category', '=', 'Doctor')]}"> -->
-                    <group>
-                        <field name="identification_number"/>
-                        <field name="insurance"/>
-                        <field name="insurance_number"/>
-                        <field name="weight"/>
-                    </group>
-                    <group>
-                        <field name="blood_group"/>
-                        <field name="medical_history"/>
-                        <field name="allergies"/>
-                        <field name="chronic_diseases"/>
-                    </group>
-                    <group>
-                        <field name="last_visit_date"/>
-                        <field name="next_appointment_date"/>
-                        <field name="doctor_assigned"/>
-                    </group>
-                    <group>
-                        <field name="emergency_contact_name"/>
-                        <field name="emergency_contact_number"/>
-                        <field name="emergency_relationship"/>
-                    </group>
-                    <group>
-                        <field name="marital_status"/>
-                        <field name="address"/>
-                        <field name="occupation"/>
-                        <field name="payment_method"/>
-                    </group>
-                </group>
-            </sheet>
-        </form>
-    </field>
-</record>
-
-        
-
+        <record id="view_hospital_patient_form" model="ir.ui.view">
+            <field name="name">hospital.patient.form</field>
+            <field name="model">hospital.patient</field>
+            <field name="arch" type="xml">
+                <form string="Hospital Patient">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="age"/>
+                            <field name="gender"/>
+                            <field name="contact"/>
+                            <field name="category" required="1"/>
+                        </group>
+                        
+                        <!-- Fields for Patients Only -->
+                        <group attrs="{'invisible': [('category', '=', 'Doctor')]}">
+                            <group>
+                                <field name="identification_number"/>
+                                <field name="insurance"/>
+                                <field name="insurance_number"/>
+                                <field name="weight"/>
+                            </group>
+                            <group>
+                                <field name="blood_group"/>
+                                <field name="medical_history"/>
+                                <field name="allergies"/>
+                                <field name="chronic_diseases"/>
+                            </group>
+                            <group>
+                                <field name="last_visit_date"/>
+                                <field name="next_appointment_date"/>
+                                <field name="doctor_assigned"/>
+                            </group>
+                            <group>
+                                <field name="emergency_contact_name"/>
+                                <field name="emergency_contact_number"/>
+                                <field name="emergency_relationship"/>
+                            </group>
+                            <group>
+                                <field name="marital_status"/>
+                                <field name="address"/>
+                                <field name="occupation"/>
+                                <field name="payment_method"/>
+                            </group>
+                        </group> <!-- Closing tag correctly added here -->
+                    </sheet>
+                </form>
+            </field>
+        </record>
     </data>
 </odoo>
-
-
-
-
