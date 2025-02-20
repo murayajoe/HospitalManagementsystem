@@ -1,3 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
 <record id="view_hospital_patient_form" model="ir.ui.view">
     <field name="name">hospital.patient.form</field>
     <field name="model">hospital.patient</field>
@@ -47,3 +50,12 @@
         </form>
     </field>
 </record>
+
+        
+
+    </data>
+</odoo>
+
+
+
+
