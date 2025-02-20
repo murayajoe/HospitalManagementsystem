@@ -8,21 +8,18 @@
                 <form string="Hospital Patient">
                     <sheet>
                         <group>
-                            <field name="name"/>
+                            <!-- <field name="name"/>
                             <field name="age"/>
                             <field name="gender"/>
                             <field name="contact"/>
                             <field name="category" required="1"/>
-                        </group>
-                        
-                        <!-- Fields for Patients Only -->
-                        <!-- <group attrs="{'invisible': [('category', '=', 'Doctor')]}"> -->
-                            <group>
+                        </group> -->
+                            <!-- <group>
                                 <field name="identification_number"/>
                                 <field name="insurance"/>
                                 <field name="insurance_number"/>
                                 <field name="weight"/>
-                            </group>
+                            </group> -->
                             <group>
                                 <field name="blood_group"/>
                                 <field name="medical_history"/>
@@ -45,7 +42,6 @@
                                 <field name="occupation"/>
                                 <field name="payment_method"/>
                             </group>
-                        </group> 
                     </sheet>
                 </form>
             </field>
