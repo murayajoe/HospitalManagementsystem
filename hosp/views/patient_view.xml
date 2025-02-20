@@ -42,7 +42,7 @@
                 <field name="insurance_number" string="Insurance Number"/>
                 <field name="weight" string="Weight"/>
                 <field name="identification_number" string="ID Number"/>
-                <!-- <field name="blood_group"/>
+                <field name="blood_group"/>
                 <field name="allergies"/>
                 <field name="last_visit_date"/>
                 <field name="next_appointment_date"/>
@@ -54,7 +54,7 @@
                 <field name="marital_status"/>
                 <field name="address"/>
                 <field name="occupation"/>
-                <field name="payment_method"/>            -->
+                <field name="payment_method"/>           
             </list>
         </field>
     </record>
@@ -77,7 +77,12 @@
                         <field name="identification_number" string="ID Number"/>
                     </group>
                    
-                </sheet>   
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="activity_ids" widget="mail_activity"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>   
             </form>
         </field>
     </record>
