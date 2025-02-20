@@ -11,7 +11,6 @@
                 <field name="name" string="Patient Name"/>
                 <field name="age" string="Age"/>
                 <field name="gender" string="Gender"/>
-                
                 <filter name="filter_male" string="Male" domain="[['gender', '=', 'male']]"/>
                 <filter name="filter_female" string="Female" domain="[['gender', '=', 'female']]"/>
                 <separator/>
@@ -78,28 +77,7 @@
                         <field name="weight" string="Weight"/>
                         <field name="identification_number" string="ID Number"/>
                     </group>
-                   <!-- <group>
-                                <field name="blood_group"/>
-                                <field name="medical_history"/>
-                                <field name="allergies"/>
-                                <field name="chronic_diseases"/>
-                            </group>
-                            <group>
-                                <field name="last_visit_date"/>
-                                <field name="next_appointment_date"/>
-                                <field name="doctor_assigned"/>
-                            </group>
-                            <group>
-                                <field name="emergency_contact_name"/>
-                                <field name="emergency_contact_number"/>
-                                <field name="emergency_relationship"/>
-                            </group>
-                            <group>
-                                <field name="marital_status"/>
-                                <field name="address"/>
-                                <field name="occupation"/>
-                                <field name="payment_method"/>
-                            </group> -->
+                   
                 </sheet>   
                 <!-- chatter section -->
                 <div class="oe_chatter">
