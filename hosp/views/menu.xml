@@ -5,7 +5,7 @@
         <menuitem
             id="menu_hospital_root"
             name="Hospital"
-            web_icon="hospital_management/static/description/icon.png"
+            web_icon="hosp,static/description/icon.png" 
             sequence="0"/>
 
         <!-- Patient Menu -->

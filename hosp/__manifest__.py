@@ -12,7 +12,7 @@
     'maintainer': 'Joe Muraya',
     'website': 'https://clickpoa.odoo.com',
     'license': 'LGPL-3',
-    'depends': [],
+    'depends': ['mail'],
     'data': [
         'security/ir.model.access.csv',
         'views/menu.xml', 
