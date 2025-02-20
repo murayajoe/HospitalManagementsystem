@@ -49,16 +49,13 @@ The **Hospital Management System (HMS)** is an Odoo module designed to streamlin
 
 ## Support
 For any issues, bugs, or feature requests, please contact:
-- **Email**: support@yourdomain.com
-- **GitHub Issues**: <repository-url>/issues
+- **Email**: support@clickpoa.com
+- **GitHub Issues**: <[HospitalManagementsystem](https://github.com/murayajoe/HospitalManagementsystem)>/issues
 
 ## License
 This module is licensed under the MIT License. See `LICENSE` for details.
 
 ## Contributors
 - **Joe Muraya** - Lead Developer & Maintainer
-- [Add other contributors if applicable]
-
 ---
-**Note:** Ensure that your Odoo environment meets the necessary dependencies before installation.
 
