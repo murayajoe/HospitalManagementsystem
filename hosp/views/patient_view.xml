@@ -64,7 +64,7 @@
                         <field name="weight" string="Weight"/>
                         <field name="identification_number" string="ID Number"/>
                     </group>
-                   <group>
+                   <!-- <group>
                                 <field name="blood_group"/>
                                 <field name="medical_history"/>
                                 <field name="allergies"/>
@@ -85,7 +85,7 @@
                                 <field name="address"/>
                                 <field name="occupation"/>
                                 <field name="payment_method"/>
-                            </group>
+                            </group> -->
                 </sheet>   
                 <!-- chatter section -->
                 <div class="oe_chatter">
