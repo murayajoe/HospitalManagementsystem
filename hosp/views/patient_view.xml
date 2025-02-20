@@ -76,6 +76,21 @@
                         <field name="weight" string="Weight"/>
                         <field name="identification_number" string="ID Number"/>
                     </group>
+                    <group>
+                        <field name="blood_group"/>
+                        <field name="allergies"/>
+                        <field name="last_visit_date"/>
+                        <field name="next_appointment_date"/>
+                        <field name="doctor_assigned"/>
+                        <field name="emergency_contact_name"/>
+                        <field name="medical_history"/>
+                        <field name="emergency_contact_number"/>
+                        <field name="emergency_relationship"/>
+                        <field name="marital_status"/>
+                        <field name="address"/>
+                        <field name="occupation"/>
+                        <field name="payment_method"/>           
+                    </group>
                    
                 </sheet>
             </form>
