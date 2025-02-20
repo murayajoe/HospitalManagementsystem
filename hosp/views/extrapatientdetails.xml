@@ -16,7 +16,7 @@
                         </group>
                         
                         <!-- Fields for Patients Only -->
-                        <group attrs="{'invisible': [('category', '=', 'Doctor')]}">
+                        <!-- <group attrs="{'invisible': [('category', '=', 'Doctor')]}"> -->
                             <group>
                                 <field name="identification_number"/>
                                 <field name="insurance"/>
@@ -45,7 +45,7 @@
                                 <field name="occupation"/>
                                 <field name="payment_method"/>
                             </group>
-                        </group> <!-- Closing tag correctly added here -->
+                        </group> 
                     </sheet>
                 </form>
             </field>
