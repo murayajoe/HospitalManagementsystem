@@ -67,6 +67,7 @@
                         <field name="identification_number" string="ID Number"/>
                     </group>
                 </sheet>   
+                <!-- chatter section -->
                 <div class="oe_chatter">
                     <field name="message_follower_ids" widget="mail_followers"/>
                     <field name="activity_ids" widget="mail_activity"/>
