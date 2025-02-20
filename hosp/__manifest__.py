@@ -20,7 +20,7 @@
         'views/female_patient_view.xml',
         'views/male_patient_view.xml',
         'views/doctor_view.xml',
-        'views/extrapatientdetails.xml'
+        # 'views/extrapatientdetails.xml'
     ],
     'assets': {},
     'installable': True,
