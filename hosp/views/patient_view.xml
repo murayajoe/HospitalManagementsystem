@@ -78,7 +78,7 @@
                     </group>
                    
                 </sheet>   
-                </chatter>
+                <!-- </chatter> -->
                 <!-- chatter section -->
                 <!-- <div class="oe_chatter">
                     <field name="message_follower_ids" widget="mail_followers"/>
