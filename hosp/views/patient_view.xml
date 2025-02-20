@@ -78,11 +78,11 @@
                     </group>
                     <group>
                         <field name="identification_number" string="ID Number"/>
-                        <!-- <field name="blood_group" string="Blood Group"/>
+                        <field name="blood_group" string="Blood Group"/>
                         <field name="allergies" string="Allergies"/>
                         <field name="last_visit_date" string="Last Visit Date"/>
                         <field name="next_appointment_date" string="Next Appointment Date"/>
-                        <field name="doctor_assigned" string="Doctor Assigned"/>
+                        <!-- <field name="doctor_assigned" string="Doctor Assigned"/> -->
                         <field name="emergency_contact_name" string="Emergency Contact Name"/>
                         <field name="medical_history" string="Medical History"/>
                         <field name="emergency_contact_number" string="Emergency Contact Number"/>
@@ -90,7 +90,7 @@
                         <field name="marital_status" string="Marital Status"/>
                         <field name="address" string="Address"/>
                         <field name="occupation" string="Occupation"/>
-                        <field name="payment_method" string="Payment Method"/>            -->
+                        <field name="payment_method" string="Payment Method"/>           
                     </group>
                 </sheet>
             </form>
