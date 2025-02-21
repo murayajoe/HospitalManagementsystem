@@ -26,7 +26,8 @@
                     <filter string="ID Number" name="group_by_identification_number" context="{'group_by': 'identification_number'}"/>
                 </group>
                 <searchpanel>
-                <field name="gender icon="fa-users select="multi" enable_counters="1"/>
+                <field name="gender" enable_counters="1"/>
+                </searchpanel>
             </search>
         </field>
     </record>
