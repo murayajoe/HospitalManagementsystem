@@ -25,6 +25,8 @@
                     <filter string="Age" name="group_by_age" context="{'group_by': 'age'}"/>
                     <filter string="ID Number" name="group_by_identification_number" context="{'group_by': 'identification_number'}"/>
                 </group>
+                <searchpanel>
+                <field name="gender icon="fa-users select="multi" enable_counters="1"/>
             </search>
         </field>
     </record>
